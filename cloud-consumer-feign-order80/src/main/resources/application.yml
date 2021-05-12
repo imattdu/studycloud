@@ -1,0 +1,22 @@
+server:
+  port: 80
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka,http://eureka7002:7002/eureka
+
+# 设置超时时间
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+
+logging:
+  level:
+    com.matt.springcloud.service.PaymentFeignService: debug
+
+
+
+
+
+
